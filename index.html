@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Owen Davis — Human-Centered Computing student and freelance web developer specializing in responsive design and nonprofit web platforms.">
+    <meta property="og:title" content="Owen Davis — Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:description" content="Human-Centered Computing student and freelance web developer.">
     <title>Owen Davis's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -11,136 +16,229 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0bb1f60797.js" crossorigin="anonymous"></script>
-  </head>
-
-<header>
-  <div id= "particles">
-    <nav class="navbar">
-        <ul class="navbar-menu">
-          <h1>OwenDavis._</h1>
-          <li class="bar-item"><a href="#" class="nav-link">// home &nbsp; &nbsp; &nbsp;</a></li>
-          <li class="bar-item"><a href="#" class="navbar-link">// about &nbsp; &nbsp; &nbsp;</a></li>
-          <li class="navbar-item"><a href="#" class="navbar-link">// projects &nbsp; &nbsp; &nbsp;</a></li>
-          <li class="navbar-item"><a href="#" class="navbar-link">// contact &nbsp; &nbsp; &nbsp;</a></li>
-        </ul>
-    </nav>
-  </div>
-</header>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
 <body>
 
-  <nav class="welcome">
-    <h1>OWEN DAVIS</h1>
-    <h2>STUDENT, SOFTWARE ENGINEER, FRONT END DEVELOPER</h2>
-  </nav>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <h1 class="logo">OwenDavis._</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">// home</a></li>
+                <li><a href="#about">// about</a></li>
+                <li><a href="#experience">// experience</a></li>
+                <li><a href="#new">// new</a></li>
+                <li><a href="#contact">// contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <a href="#">
-    <div id="mouse-scroll">
-      <div class="mouse">
-        <div class="mouse-in"></div>
-      </div>
-      <div>
-          <span class="down-arrow-1"></span>
-          <span class="down-arrow-2"></span>
-          <span class="down-arrow-3"></span>
-       </div>
-    </div>
-    </a>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero">
+        <div id="particles"></div>
+        <h1>OWEN DAVIS</h1>
+        <h2>STUDENT. SOFTWARE ENGINEER. WEB DEVELOPER.</h2>
+    </section>
 
-  <nav class="about-title">
-    <h1>About</h1>
-  </nav>
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
 
-  <div class="about-box">
-    <p>
-    Welcome to my corner of the digital world! 
-    My name is Owen, and I'm currently embarking on my journey as a first-year student at the Rochester Institute of Technology (RIT), where I'm pursuing a degree in Software Engineering.
-    From a young age, I've been drawn to the world of technology and its infinite possibilities. 
-    </p>
-    <br />
-    <p>
-    As an Eagle Scout, I've cultivated a strong sense of leadership, dedication, and problem-solving skills that I bring to every aspect of my life, including my academic pursuits and professional endeavors.
-    Outside of the classroom, I channel my creativity and technical expertise into freelance web development projects, where I craft dynamic and user-friendly digital experiences for clients. 
-    I thrive on the challenges of bringing ideas to life through coding and design, constantly pushing the boundaries of what's possible in the digital realm.
-    </p>
-    <br />
-    <p>
-    When I'm not immersed in lines of code or debugging software, you can often find me indulging in my passion for CADing and 3D printing. 
-    Whether I'm prototyping new projects or bringing my imagination to life in tangible form, the world of 3D design is one that I am constantly exploring.
-    </p>
-  </div>
+        <h2 class="section-title">About</h2>
 
-  <div class="code-box">
-    <i class="fa-solid fa-terminal" style="color: #98ef76; font-size: 40px; margin-top: 25px; margin-left: 40px;"></i>
-    <h1>Software <br /> Development</h1>
-    <p1>Experienced in both <br /> functional & OOP: <br /> Python, Java, JavaScript.</p1>
-    <hr class="line_one">
-    <i class="fa-solid fa-laptop-code" style="color: #52cff8; font-size: 40px; margin-top: 220px; margin-left: -47px;"></i>
-    <h2>Frontend <br /> Development</h2>
-    <p2>Over 3 years of <br /> development experience in <br />HTML, CSS, & JS.</p2>
-    <hr class="line_two">
-    <i class="fa-solid fa-gears" style="color: #fd67f8; font-size: 40px; margin-top: 410px; margin-left: -47px;"></i></i>
-    <h3>Application<br />Skills</h3>
-    <p3>Skilled inVS Code, Atom, WordPress, GitHub, Solidworks, & AutoCAD.</p3>
-  </div>
+            <div class="about-row">
 
-  <div class="random-box">
-    <p1>
-      h3 <br />
-    </p>
-    <p2>
-      &emsp; Fun Fact: <br />
-      &emsp; I have a wide range of interests outside of coding, including competitive archery and cooking. <br />
-    </p2>
-    <p3>
-      /h3
-    </p3>
-  </div>
+                <!-- INTRO -->
+                <div class="about-panel">
+                    <h3>About Me</h3>
+                        <p>
+                            I’m Owen Davis, a Human-Centered Computing student at the Rochester Institute of Technology (RIT) 
+                            with hands-on experience building production-level websites for 
+                            large nonprofit organizations. I’ve contributed to live platforms 
+                            across multiple dioceses, working within structured content 
+                            management systems and real-world deployment environments.
+                        </p>
+                        <br>
+                        <p>
+                            My focus is building responsive, accessible, and intuitive web 
+                            experiences that prioritize clarity and usability. With a foundation 
+                            in both technical implementation and user-centered design principles, 
+                            I approach development as both an engineering and design discipline.
+                        </p>
+                        <br>
+                        <p>
+                            Outside of professional work, I design and fabricate 3D printed armor and
+                            props. I in particularly specialize in Star Wars prop and costume refabrication.
+                        </p>
+                </div>
 
-  <nav class="project-title">
-    <h1> My Projects</h1>
-  </nav>
-  
-  <div class="archdiocese-box archdiocese-box1">
-    <a href="https://archny.org/youth-faith-formation/" target="_blank"><img src="arch_logo.png" alt="Screenshot of Arch"></a>
-  </div>
+                <!-- SKILLS -->
+                <div class="about-panel">
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>Wordpress / WixStudios / Square</li>
+                        <li>PHP</li>
+                        <li>SQL & Databases</li>
+                        <li>Responsive Design</li>
+                        <li>User-Centered Design</li>
+                    </ul>
+                </div>
 
-  <div class="archdiocese_text">
-    <h1>Department of Youth Faith Formation</h1>
-    <h2>Archdiocese of New York</h2>
-    <h3>May 2023 - Current</h3>
-    <p></p>
-  </div>
-
-  <div class="row">
-  <div class="website-box website-box1">
-    <a href="https://archny.org/youth-faith-formation/" target="_blank"><img src="Lucid_logo.png" alt="Screenshot of Arch"></a>
-  </div>
-
-  <div class="vex-box vex-box1">
-    <a href="https://archny.org/youth-faith-formation/" target="_blank"><img src="vex_icon.png" alt="VEX Robotics Logo"></a>
-  </div>
-
-  <div class="lucid-box lucid-box1">
-    <a href="https://archny.org/youth-faith-formation/" target="_blank"><img src="lucid_logo.png" alt="Lucid Community Logo"></a>
-  </div>
-  </div>
-
-  <div class="rune-box rune-box1">
-    <a href="https://archny.org/youth-faith-formation/" target="_blank"><img src="shield.png" alt="Screenshot of Arch"></a>
-  </div>
-
-  <div class="rune_text">
-    <h1>Runelight Shield</h1>
-    <h2>Engineering House</h2>
-    <h3>September 2023 - Current</h3>
-    <p></p>
-  </div>
+                <!-- CONNECT -->
+                <div class="about-panel">
+                    <h3>Connect</h3>
+                    <div class="connect-links">
+                        <a href="mailto:ogdtechnology@gmail.com">Email</a>
+                        <a href="https://github.com/o-davis21" target="_blank">GitHub</a>
+                        <a href="https://www.instagram.com/cosmic.armory" target="_blank">Instagram</a>
+                        <a href="https://www.linkedin.com/in/odavis94/" target="_blank">LinkedIn</a>
+                        <a href="OwenDavis_resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+                    </div>
+                </div>
+            </div>
+    </section>
 
 
 
+    <!-- ================= EXPERIENCE SECTION ================= -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">Featured Experience</h2>
+
+        <div class="work-grid">
+
+            <a href="work/denver.html" class="work-tile image-tile">
+                <div class="tile-overlay">
+                    <div class="tile-text">
+                        <h3>Archdiocese of Denver</h3>
+                        <p class="tile-role">Freelance Web Developer</p>
+                        <div class="tile-button">
+                            ↗
+                        </div>
+                    </div>
+                </div>
+            </a>
 
 
+            <a href="work/stl.html" class="work-tile image-tile">
+                <div class="tile-overlay">
+                    <div class="tile-text">
+                        <h3>Archdiocese of St. Louis</h3>
+                        <p class="tile-role">Freelance Web Developer</p>
+                        <div class="tile-button">
+                            ↗
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="work/new_york.html" class="work-tile image-tile">
+                <div class="tile-overlay">
+                    <div class="tile-text">
+                        <h3>Archdiocese of New York</h3>
+                        <p class="tile-role">Freelance Web Developer</p>
+                        <div class="tile-button">
+                            ↗
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ================= NOW ================= -->
+    <section id="new" class="now section" aria-label="What I'm working on now">
+        <h2 class="section-title">What I’m Working on Now</h2>
+
+        <div class="now-grid">
+            <!-- Item 1 -->
+            <article class="now-card">
+                <div class="now-card__meta">
+                    <span class="now-pill">Learning</span>
+                    <time class="now-time" datetime="2026-02">Feb 2026</time>
+                </div>
+                <h3 class="now-card__title">Mobile App Development</h3>
+                <p class="now-card__text">
+                    Learning how to identify and build different types of mobile apps. I am learning how to build both
+                    Android and iOS apps.
+                </p>
+                <ul class="now-tags">
+                    <li>iOS apps</li>
+                    <li>Android</li>
+                    <li>Foundational Learning</li>
+                </ul>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="now-card">
+                <div class="now-card__meta">
+                    <span class="now-pill now-pill--build">Building</span>
+                    <time class="now-time" datetime="2026-02">Feb 2026</time>
+                </div>
+                <h3 class="now-card__title">Digital Resume Portfolio</h3>
+                <p class="now-card__text">
+                    Currently building a digital resume portfolio website to showcase all of my work.
+                    The goal is to have this finished by RIT Career Fair.
+                </p>
+                <ul class="now-tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="now-card">
+                <div class="now-card__meta">
+                    <span class="now-pill now-pill--exp">Exploring</span>
+                    <time class="now-time" datetime="2026-02">Feb 2026</time>
+                </div>
+                <h3 class="now-card__title">How Wix Studios's AI can help with website development</h3>
+                <p class="now-card__text">
+                    I am currently writing a report on how AI within Wix can be used to decrease parish
+                    website development time as well as all the feautures that Wix has to offer currently or
+                    will be shortly added.
+                </p>
+                <ul class="now-tags">
+                    <li>Wix Studios</li>
+                    <li>AI Development</li>
+                    <li>Research report</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">Let’s Work Together</h2>
+
+        <p class="contact-subtext">
+            I'm currently open to internships, freelance opportunities,
+            and collaborative projects. If you're building something meaningful,
+            I'd love to contribute.
+        </p>
+
+        <div class="contact-buttons">
+            <a href="mailto:ogdtechnology@gmail.com" class="contact-btn primary">
+                Email Me
+            </a>
+
+            <a href="https://www.linkedin.com/in/odavis94/" target="_blank" class="contact-btn">
+                LinkedIn
+            </a>
+        </div>
+
+    </section>
+
+    
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer" id="contact">
+        <p>© 2026 Owen Davis — All Rights Reserved</p>
+        <p><a href="mailto:ogdtechnology@gmail.com">ogdtechnology@gmail.com</a></p>
+    </footer>
 
 <script src="./script.js"></script>
 </body>

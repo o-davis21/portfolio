@@ -172,6 +172,157 @@ body {
 .image-tile:hover .tile-overlay { background: #6B8FA3; }
 .image-tile:hover .tile-button { transform: translate(5px, -5px); background: #CCE6FC; }
 
+/* ===================== CASE STUDY PAGES ===================== */
+.case-hero {
+  min-height: 54vh;
+  margin-top: 64px; /* offset for fixed navbar */
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 40px var(--container-pad);
+}
+.case-hero__content .eyebrow {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  color: #cbe7fb;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+.case-hero__content h1 {
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.1;
+  color: #fff;
+}
+.case-hero__content .subtitle {
+  color: #9ed4ea;
+  margin-top: 6px;
+}
+.badges {
+  list-style: none;
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-top: 14px; padding: 0;
+}
+.badge {
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #eaf6ff;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+.case-hero__image {
+  width: 100%; aspect-ratio: 16/9; border-radius: 24px;
+  background: rgba(255,255,255,0.06);
+  background-image: var(--case-hero);
+  background-size: cover; background-position: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+.case-section {
+  padding: 40px var(--container-pad);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.case-section h2 { color: #fff; font-size: clamp(24px, 4vw, 36px); margin-bottom: 8px; }
+.case-section .section-intro { color: #eaf6ff; opacity: 0.95; margin-bottom: 16px; }
+.case-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.case-aside { display: grid; gap: 14px; align-content: start; }
+.fact-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+.fact-card h3 { color: #fff; font-size: 16px; margin-bottom: 6px; }
+.stack-list { list-style: disc; margin-left: 18px; }
+.key-points { list-style: disc; margin-left: 18px; line-height: 1.7; }
+
+/* Project list */
+.project-list { list-style: none; display: grid; gap: 12px; padding: 0; }
+.project-item {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+.project-item h3 { margin: 0 0 6px 0; }
+.project-item a { color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.35); }
+.project-item a:hover { color: #e8f5ff; }
+
+/* Download card */
+.download-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 16px 18px;
+  align-items: center;
+}
+.download-btn {
+  background: white; color: #1c4870; text-decoration: none;
+  padding: 10px 16px; border-radius: 12px; font-weight: 600;
+}
+
+/* --- CTA Text & Button--- */
+.case-cta {
+  text-align: center;
+  padding: 40px var(--container-pad);
+}
+
+.case-cta p {
+  max-width: 720px;
+  margin: 8px auto 0;     
+  line-height: 1.7;
+}
+
+.case-cta .contact-btn {
+  display: inline-block;   
+  margin-top: 16px;        
+}
+
+.key-points li a {
+  color: #eaf6ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.key-points li a:hover {
+  color: #ffffff;
+}
+
+/* ======= HERO IMAGE CREDITS ======= */
+.image-credit {
+  margin: -8px var(--container-pad) 24px var(--container-pad); /* pulls credit snugly under hero */
+  color: #cbe7fb;
+  font-size: 12.5px;
+  font-family: "Roboto Mono", monospace;
+  opacity: 0.9;
+}
+
+.image-credit a {
+  color: #eaf6ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.image-credit .label {
+  color: #9ed4ea;
+  margin-right: 6px;
+  letter-spacing: 0.2px;
+}
+
+/* Make image credits align under the hero image when inside .case-hero */
+.image-credit.image-credit--hero {
+  margin: -25px 0 0 0;          /* snug to hero image */
+  padding: 0 var(--container-pad);
+}
+
+
 /* ================ CONTACT ================ */
 .contact {
   padding: 100px var(--container-pad);
@@ -230,11 +381,11 @@ body {
   padding: 6px 10px;
   border-radius: 999px;
   color: #0e304d;
-  background: #cbe7fb; /* light blue to match your palette */
+  background: #cbe7fb; 
 }
 
-.now-pill--build { background: #c9f7df; color: #083a20; }  /* greenish */
-.now-pill--exp   { background: #f8e6ff; color: #3e1a57; }  /* lilac */
+.now-pill--build { background: #c9f7df; color: #083a20; }  
+.now-pill--exp   { background: #f8e6ff; color: #3e1a57; }
 
 .now-time {
   font-family: "Roboto Mono", monospace;
@@ -346,6 +497,23 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr)); 
     gap: 28px;  
     }
+
+  .case-hero { grid-template-columns: 1.2fr 1fr; }
+  .case-grid { grid-template-columns: 1.5fr 0.9fr; gap: 36px; }
+  .gallery-3up { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .case-hero { position: relative; } /* ensures consistent layout context */
+
+  .image-credit.image-credit--hero {
+    grid-column: 2;           /* same column as the image */
+    padding: 0;               /* use image’s own left edge instead of section padding */
+    justify-self: start;      /* align with image’s left edge */
+    max-width: 100%;
+  }
+
+  /* If your image has rounded corners and a shadow, a slight indent looks nice */
+  .case-hero__image + .image-credit.image-credit--hero {
+    margin-left: 6px;         /* optional micro‑tweak; remove if you want perfect flush */
+  }
 }
 
 /* >= 1200px (desktops) */

@@ -24,15 +24,33 @@
     <!-- ================= NAVBAR ================= -->
     <header class="navbar">
         <h1 class="logo">OwenDavis._</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#home">// home</a></li>
-                <li><a href="#about">// about</a></li>
-                <li><a href="#experience">// experience</a></li>
-                <li><a href="#new">// new</a></li>
-                <li><a href="#contact">// contact</a></li>
+
+        <!-- Hamburger button (shown on mobile) -->
+        <button class="nav-toggle"
+                aria-expanded="false"
+                aria-controls="primary-nav"
+                aria-label="Open menu">
+            <span class="sr-only">Menu</span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+        </button>
+
+        <!-- Primary navigation -->
+        <nav class="nav" aria-label="Primary">
+            <ul id="primary-nav" class="nav-menu">
+            <li><a href="#home">/ home</a></li>
+            <li><a href="#about">/ about</a></li>
+            <li><a href="#experience">/ experience</a></li>
+            <li><a href="#new">/ new</a></li>
+            <li><a href="#contact">/ contact</a></li>
+            <!-- NOTE: on the case pages, keep these pointing back to index anchors:
+                <li><a href="index.html#home">/ home</a></li> ... -->
             </ul>
         </nav>
+
+        <!-- Overlay (appears when mobile menu is open) -->
+        <div class="nav-overlay" hidden></div>
     </header>
 
     <!-- ================= HERO SECTION ================= -->
